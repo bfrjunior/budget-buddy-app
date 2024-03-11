@@ -93,12 +93,19 @@
               "src/assets"
             ],
             "styles": [
+              "remixicon/fonts/remixicon.css",
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/jquery/dist/jquery.min.js",
+              "node_modules/bootstrap/dist/js/bootstrap.min.js"
+            ]
           }
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "f0a44b3a-4994-485a-a879-83e222e0c191"
   }
 }
