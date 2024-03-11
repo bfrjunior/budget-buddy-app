@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { Expense } from 'src/app/models/expense.model';
 import { ExpenseService } from 'src/app/services/expense.service';
-
+import * as Toastify from 'toastify-js';
 
 @Component({
   selector: 'app-expense-list',
@@ -22,7 +22,7 @@ export class ExpenseListComponent {
 
   deleteExpense(id: number): void {
     this.expenseService.deleteExpense(id).subscribe(response => {
-
+      this.showSuccessToast('Gasto eliminado');
       this.expenses = this.expenses.filter(expense => expense.id != id);
       this.calculateTotal();
     });
