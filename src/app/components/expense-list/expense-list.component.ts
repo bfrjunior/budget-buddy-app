@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { Expense } from 'src/app/models/expense.model';
 import { ExpenseService } from 'src/app/services/expense.service';
-//import * as Toastify from 'toastify-js';
+import * as Toastify from 'toastify-js';
 
 @Component({
   selector: 'app-expense-list',
