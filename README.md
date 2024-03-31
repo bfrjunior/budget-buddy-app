@@ -1,27 +1,44 @@
 # BudgetBuddyApp
+![alt text](src/assets/home.PNG)
+
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.12.
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## 🚀 Começando
 
-## Code scaffolding
+Essas instruções permitirão que você obtenha uma cópia do projeto em operação na sua máquina local para fins de desenvolvimento e teste.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### 📋 Pré-requisitos
+Before you begin, ensure you have the following installed:
 
-## Build
+Node.js (version 16 or higher)
+npm (Node Package Manager, usually installed with Node.js)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+### 🔧 Instalação
 
-## Running unit tests
+Uma série de exemplos passo-a-passo que informam o que você deve executar para ter um ambiente de desenvolvimento em execução.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Clone the repository:
+```
+git clone https://github.com/bfrjunior/budget-buddy-app.git
+```
 
-## Running end-to-end tests
+Navigate to the project directory:
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+```
+cd budget-buddy-app
+```
+Install dependencies:
 
-## Further help
+```
+npm install
+```
+Development server
+Run ng serve for a dev server. Navigate to http://localhost:4200/. The app will automatically reload if you change any of the source files.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+![alt text](src/assets/nuevo.PNG)
+## 🛠️ Construído com
+
+* [Angular 17]()
+* [NodeJs]()
