@@ -2,7 +2,7 @@
   <h2 class="section-title mb-4">{{ getFormTitle() }}</h2>
   <div class="d-flex gap-2 mb-3">
     <a class="btn btn-outline-secondary" routerLink="/gastos">Cancelar</a>
-    <button type="button" class="btn btn-primary" (click)="saveExpense()" [disabled]="this.expenseForm.invalid">Guardar gasto</button>
+    <button type="button" class="btn btn-primary" (click)="saveExpense()" [disabled]="this.expenseForm.invalid">Adicionar despesa</button>
   </div>
 </div>
 
@@ -11,33 +11,33 @@
     <label for="typeInput" class="form-label">Tipo de gasto</label>
     <input type="text" formControlName="type" class="form-control {{ hasError('type') ? 'is-invalid' : '' }}" id="typeInput" placeholder="Transporte, Comida, Otros">
     <div class="invalid-feedback" [ngSwitch]="getCurrentError('type')">
-      <span *ngSwitchCase="'required'">El campo tipo es requerido</span>
-      <span *ngSwitchCase="'maxlength'">El campo tipo debe contener 100 caracteres como máximo</span>
+      <span *ngSwitchCase="'required'">O campo tipo é obrigatório</span>
+      <span *ngSwitchCase="'maxlength'">O campo tipo deve conter no máximo 100 caracteres</span>
     </div>
   </div>
   <div class="mb-3">
-    <label for="amountInput" class="form-label">Cantidad gastada</label>
+    <label for="amountInput" class="form-label">Quantia gasta</label>
     <div class="input-group has-validation">
       <span class="input-group-text">$</span>
       <input type="number" formControlName="amount" class="form-control {{ hasError('amount') ? 'is-invalid' : '' }}" id="amountInput" placeholder="0.00">
       <div class="invalid-feedback" [ngSwitch]="getCurrentError('amount')">
-        <span *ngSwitchCase="'required'">El campo cantidad es requerido</span>
+        <span *ngSwitchCase="'required'">O campo quantidade é obrigatório</span>
       </div>
     </div>
   </div>
   <div class="mb-3">
-    <label for="descriptionInput" class="form-label">Descripción</label>
-    <textarea formControlName="description" class="form-control {{ hasError('description') ? 'is-invalid' : '' }}" id="descriptionInput" placeholder="Escribe una descripción del gasto realizado"></textarea>
+    <label for="descriptionInput" class="form-label">Descrição</label>
+    <textarea formControlName="description" class="form-control {{ hasError('description') ? 'is-invalid' : '' }}" id="descriptionInput" placeholder="Escreva uma descrição das despesas"></textarea>
     <div class="invalid-feedback" [ngSwitch]="getCurrentError('description')">
-      <span *ngSwitchCase="'required'">El campo descripción es requerido</span>
+      <span *ngSwitchCase="'required'">O campo de descrição é obrigatório</span>
     </div>
   </div>
   <div class="mb-3">
-    <label for="expenseDateInput" class="form-label">Fecha de gasto</label>
+    <label for="expenseDateInput" class="form-label">Data</label>
     <input type="date" formControlName="expense_date" class="form-control {{ hasError('expense_date') ? 'is-invalid' : '' }}" id="expenseDateInput">
     <div class="invalid-feedback" [ngSwitch]="getCurrentError('expense_date')">
-      <span *ngSwitchCase="'required'">El campo fecha de gasto es requerido</span>
+      <span *ngSwitchCase="'required'">O campo data da despesa é obrigatório</span>
     </div>
   </div>
-  <button type="submit" class="btn btn-primary" [disabled]="this.expenseForm.invalid">Guardar gasto</button>
+  <button type="submit" class="btn btn-primary" [disabled]="this.expenseForm.invalid">Adicionar despesa</button>
 </form>

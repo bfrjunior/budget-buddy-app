@@ -1,9 +1,9 @@
 <div class="d-flex align-items-center justify-content-between gap-2 flex-wrap mt-5 mb-4">
-  <h2 class="section-title">Gastos</h2>
+  <h2 class="section-title">Despesas</h2>
 
   <div class="d-flex align-items-center flex-wrap gap-3 gap-sm-5">
-    <p class="m-0 total-spent-text">Total gastado: <span class="fw-bold ms-1"><i class="ri-arrow-down-s-fill text-danger"></i> {{ total | currency }}</span></p>
-    <a class="btn btn-primary" routerLink="/gastos/nuevo">Agregar gasto</a>
+    <p class="m-0 total-spent-text">Total de Despesas: <span class="fw-bold ms-1"><i class="ri-arrow-down-s-fill text-danger"></i> {{ total | currency }}</span></p>
+    <a class="btn btn-primary" routerLink="/gastos/nuevo">Adicionar despesa</a>
   </div>
 </div>
 
@@ -13,9 +13,9 @@
       <tr>
         <th scope="col">#</th>
         <th scope="col">Tipo</th>
-        <th scope="col">Cantidad</th>
-        <th scope="col">Descripción</th>
-        <th scope="col" width="180">Fecha de gasto</th>
+        <th scope="col">Quantidade</th>
+        <th scope="col">Descrição</th>
+        <th scope="col" width="180">Data da despesa</th>
         <th scope="col" class="table-head-action"></th>
       </tr>
     </thead>
@@ -42,7 +42,7 @@
       </ng-container>
       <ng-template #emptyMessage>
         <tr>
-          <td colspan="6">No hay datos para mostrar</td>
+          <td colspan="6">Não há Dados para mostrar</td>
         </tr>
       </ng-template>
     </tbody>

@@ -32,12 +32,12 @@ export class ExpenseFormComponent implements OnInit {
   saveExpense(): void {
     if (this.expenseId) {
       this.expenseService.updateExpense(this.expenseId, this.expenseForm.value).subscribe(expense => {
-        this.showSuccessToast("Gasto actualizado con éxito");
+        this.showSuccessToast("Gasto atualizado com éxito");
         this.router.navigateByUrl('/gastos');
       });
     } else {
       this.expenseService.createExpense(this.expenseForm.value).subscribe(expense => {
-        this.showSuccessToast("Gasto agregado con éxito");
+        this.showSuccessToast("Gasto adicionado com éxito");
         this.router.navigateByUrl('/gastos');
       });
     }
@@ -65,7 +65,7 @@ export class ExpenseFormComponent implements OnInit {
   }
 
   getFormTitle(): string {
-    return this.expenseId ? 'Editar gasto' : 'Nuevo gasto';
+    return this.expenseId ? 'Editar gasto' : 'Novo gasto';
   }
 
   private loadDataIntoForm(): void {
